@@ -18,6 +18,13 @@
 * `Ctrl + b` _Default prefix key_
 * `{prefix} + c` _Create new window_
 * `{prefix} + {window number}` _Change window_
-* `{prefix} + d` _Detach session_
+* `{prefix} + %` _Vertical split_
+* `{prefix} + "` _Horizontal split_
+* `{prefix} + arrow` _Change pane.  Or don't release CTRL to resize pane with arrows_
+* `{prefix} + z` _Toggle pane full screen zoom_
+* `{prefix} + {` _Move pane left_
+* `{prefix} + }` _Move pane right_
+* `{prefix} + spacebar` _Toggle layout options_
 * `tmux join-pane -t {window}`_Move current pane to window_
 * `tmux join-pane -s {session}:{window}.{pane} -t {session}:{window}.{pane}`_Move source pane to target pane_
+* `{prefix} + d` _Detach session_
