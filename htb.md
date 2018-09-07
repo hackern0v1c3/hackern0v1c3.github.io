@@ -23,7 +23,7 @@
 * `run post/multi/recon/local_exploit_suggester` _Check for local priv esc exploits.  Must be interacting with meterpreter session_
 
 ## Break out of limited shell 
-## (Credit Gos Here https://speakerdeck.com/knaps/escape-from-shellcatraz-breaking-out-of-restricted-unix-shells)
+**(Credit Gos Here https://speakerdeck.com/knaps/escape-from-shellcatraz-breaking-out-of-restricted-unix-shells)**
 * `env` _Check environmential variables_
 * `echo $PATH` _Check path for executables_
 * `echo $SHELL` _What shell is in use_
