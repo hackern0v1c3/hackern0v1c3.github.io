@@ -13,6 +13,10 @@
 ## Tmux Commands
 * `tmux new -s {name}` _Make a new tmux session with name_
 * `Ctrl + b` _Default prefix key_
+* `{preifx} + [` _Enter copy mode_
+* `{prefix} + space` _Start copying in copy mode_
+* `CTRL + w` _Copy selected text_
+* `{prefix} + b` _Paste copied text_
 * `{prefix} + c` _Create new window_
 * `{prefix} + ,` _Rename window_
 * `{prefix} + {window number}` _Change window_
