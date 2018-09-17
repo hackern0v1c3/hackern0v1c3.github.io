@@ -2,3 +2,4 @@
 * [Pickle Exploit video by IppSec](https://www.youtube.com/watch?v=rs75y2qPonc&t=681s)
 * [Kerberoasting AKA exploiting domain service accounts](https://room362.com/post/2016/kerberoast-pt1/)
 * [Powerup powershell priv esc auditing](https://www.harmj0y.net/blog/powershell/powerup-a-usage-guide/)
+* [Getting empire session from meterpreter session](https://gist.githubusercontent.com/rmusser01/5e5ddd8a0d315776d3e9c8896ede2bb4/raw/29308cf07a26e839092ed2436c424dd944faaa5d/Empire%2520and%2520Metasploit%2520101%2520-%2520BookClub)
