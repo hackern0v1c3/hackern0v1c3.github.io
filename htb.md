@@ -3,6 +3,8 @@
 * `nmap -Pn -n -p- -sV -A {ip}` _Slow nmap all info_
 * `gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://{site} -r -t {n} -o gobuster.txt ` _Gobuster scan for folders with n threads_
 * `gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://{site} -r -t {n} -x php,asp,aspx,html -o gobuster_aspx.txt` _Gobuster scan for pages with n threads_
+* `wfuzz -hw {hide rows with this number of words} --hh {hide rows with this number of chars} -hc {hide rows with this response code} -w {wordlist} {URL}/FUZZ` _Use wfuzz to enumerate pages when gobuster won't work_
+* _To clone git repos from challenge machines the url from the git config file must be added to the local host file_
 
 ## Exploit
 * `python -m SimpleHTTPServer 80` _Start web server on kali in current dir_
