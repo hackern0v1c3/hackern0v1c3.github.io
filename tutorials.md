@@ -4,3 +4,4 @@
 * [Powerup powershell priv esc auditing](https://www.harmj0y.net/blog/powershell/powerup-a-usage-guide/)
 * [Getting empire session from meterpreter session](https://gist.githubusercontent.com/rmusser01/5e5ddd8a0d315776d3e9c8896ede2bb4/raw/29308cf07a26e839092ed2436c424dd944faaa5d/Empire%2520and%2520Metasploit%2520101%2520-%2520BookClub)
 * [CrackmapExec for attacking windows networks](https://github.com/byt3bl33d3r/CrackMapExec/wiki/SMB-Command-Reference)
+* [Easy button domain admin with responder](https://gist.github.com/braimee/e3e462b634715ae06121c82d49c274e9)
