@@ -9,6 +9,8 @@
 * `Ctrl + W` _Delete current word_
 * `Ctrl + R` _Search bash history_
 * `history` _Show all bash history_
+* `!!` _Run the last command, useful for sudo !!_
+* ` ` _Start a command with a blank space and it will not show up in bash history_
 
 ## Tmux Commands
 * `tmux new -s {name}` _Make a new tmux session with name_
