@@ -49,7 +49,3 @@
 * `dd` _Delete current line_
 * `yy` _Copy current line_
 * `p` _Paste_
-
-## Other Useful Commands
-* `python -m SimpleHttpServer 80` _Start a python 2 http server on port 80 in current directory_
-* `python3 -m http.server 80` _Start a python 2 http server on port 80 in current directory_
