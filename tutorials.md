@@ -7,3 +7,4 @@
 * [Easy button domain admin with responder](https://gist.github.com/braimee/e3e462b634715ae06121c82d49c274e9)
 * [What to do with creds on windows network](https://blog.ropnop.com/using-credentials-to-own-windows-boxes/)
 * [From Burp to SQLMap, Notes on bypassing file upload filters, and pivoting tricks](https://youtu.be/LfbwlPxToBc)
+* [Ebowla Encoding AV Evasion by IppSec at 46 minutes](https://www.youtube.com/watch?v=l-wzBhc9wFc)
