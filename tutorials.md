@@ -8,3 +8,4 @@
 * [What to do with creds on windows network](https://blog.ropnop.com/using-credentials-to-own-windows-boxes/)
 * [From Burp to SQLMap, Notes on bypassing file upload filters, and pivoting tricks](https://youtu.be/LfbwlPxToBc)
 * [Ebowla Encoding AV Evasion by IppSec at 46 minutes](https://www.youtube.com/watch?v=l-wzBhc9wFc)
+* [Searchable list of IppSec video descriptions](https://gist.github.com/sminez/571bd7bafb1b88630b85c85a0cd66e3a)
