@@ -9,3 +9,4 @@
 * [From Burp to SQLMap, Notes on bypassing file upload filters, and pivoting tricks](https://youtu.be/LfbwlPxToBc)
 * [Ebowla Encoding AV Evasion by IppSec at 46 minutes](https://www.youtube.com/watch?v=l-wzBhc9wFc)
 * [Searchable list of IppSec video descriptions](https://gist.github.com/sminez/571bd7bafb1b88630b85c85a0cd66e3a)
+* [More IppSec.  Dumping and cracking windows creds](https://youtu.be/2j3FNp5pjQ4)

