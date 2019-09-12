@@ -10,3 +10,5 @@
 * [Ebowla Encoding AV Evasion by IppSec at 46 minutes](https://www.youtube.com/watch?v=l-wzBhc9wFc)
 * [Searchable list of IppSec video descriptions](https://gist.github.com/sminez/571bd7bafb1b88630b85c85a0cd66e3a)
 * [More IppSec.  Dumping and cracking windows creds](https://youtu.be/2j3FNp5pjQ4)
+* [Responder, password cracking, windows lan hacking](https://www.youtube.com/watch?v=6I2BQn5aqjU)
+* [cloud hash cracking](https://gist.github.com/braimee/0709b30653008df864b886b750bc42ce)
