@@ -12,3 +12,4 @@
 * [More IppSec.  Dumping and cracking windows creds](https://youtu.be/2j3FNp5pjQ4)
 * [Responder, password cracking, windows lan hacking](https://www.youtube.com/watch?v=6I2BQn5aqjU)
 * [cloud hash cracking](https://gist.github.com/braimee/0709b30653008df864b886b750bc42ce)
+* [get a shell on windows box with creds when port 5985 is open](https://alionder.net/winrm-shell/)

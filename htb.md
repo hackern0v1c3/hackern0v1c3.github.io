@@ -7,6 +7,8 @@
 * _To clone git repos from challenge machines the url from the git config file must be added to the local host file_
 * _https://www.wappalyzer.com/download wappalyzer to identify technologies used on websites_
 * _https://retirejs.github.io/retire.js/ find old javascript libraries with known vulns on a a page_
+* `impacket/examples/lookupsid.py {user}:{password}@{ip}` _use any valid creds to enumerate other usernames on a windows box_
+* `smbmap -u {user} -p '{pass}' -H {ip}` _use valid creds to enumerate shares on a windows box_
 
 ## Exploit
 * `python -m SimpleHTTPServer 80` _Start python 2 web server on kali on port 80 in current dir_
