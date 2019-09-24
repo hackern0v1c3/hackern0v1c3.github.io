@@ -4,3 +4,4 @@
 * [Have I Been Pwned Wordlist download torrent](https://gist.github.com/rvrsh3ll/7fa3592e12100626527df7b256a3e347)
 * [Best reverse shell cheat sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 * [Automate password cracking on AWS](https://github.com/Coalfire-Research/npk)
+* [Great payload resources for things like xss, sqlinjection, serialization, file inclusion, and many others.](https://github.com/swisskyrepo/PayloadsAllTheThings)
