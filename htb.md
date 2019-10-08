@@ -21,7 +21,7 @@
 
 ## Password Attacks
 * `hydra -l {username} -P {password file} {base url or ip} -s{port} http-post-form "/index.php:user=^USER^&password=^PASS^:{failed string}"`  _Brute force http post login with hydra_
-* (figure out hash types)[https://hashcat.net/wiki/doku.php?id=example_hashes] _page with example hashes and their hashcat type/code_
+* [figure out hash types](https://hashcat.net/wiki/doku.php?id=example_hashes) _page with example hashes and their hashcat type/code_
 * `hashcat -m {hashtype} hashes.txt ~/Documents/git/SecLists/Passwords/*.txt --force`  _try cracking all hashes in hashes.txt against all seclist password text files, using no gpu_
 
 ## Priv Esc Windows
