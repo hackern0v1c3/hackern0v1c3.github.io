@@ -11,6 +11,13 @@
 * `history` _Show all bash history_
 * `!!` _Run the last command, useful for sudo !!_
 * ` ` _Start a command with a blank space and it will not show up in bash history_
+* `mount -t tmpfs tmpfs /mnt/{folder} -o size={size}M` _Create a RAM disk for temporary super fast storage_
+* `{bash command} &` _Run command in the background as a job_
+* `Ctrl + Z` _Pause currently running job and send it to the background_
+* `fg %{job number}` _Resume a background job in the foreground. If no job number is provided it choses the last job in the jobs table_
+* `bg %{job number}` _Resume paused background job in the background_
+* `jobs` _Show background jobs table_
+* `dispown -a && exit` _Close current terminal but don't terminate any background jobs_
 
 ## Tmux Commands
 * `tmux new -s {name}` _Make a new tmux session with name_
