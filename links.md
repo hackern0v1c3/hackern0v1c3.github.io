@@ -6,3 +6,4 @@
 * [Automate password cracking on AWS](https://github.com/Coalfire-Research/npk)
 * [Great payload resources for things like xss, sqlinjection, serialization, file inclusion, and many others.](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [Extracting firmware from .img files](https://www.youtube.com/watch?v=oqk3cU7ekag)
+* [Find useful expired domains for phishing](https://www.expireddomains.net/)

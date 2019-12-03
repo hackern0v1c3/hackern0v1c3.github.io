@@ -14,3 +14,4 @@
 * [cloud hash cracking](https://gist.github.com/braimee/0709b30653008df864b886b750bc42ce)
 * [get a shell on windows box with creds when port 5985 is open](https://alionder.net/winrm-shell/)
 * [around 11 minutes catching creds with meterpreter for services, similar to responder, also some nice pentesting python for webapps](https://youtu.be/4uCoI5YzOwk)
+* [Grabbing clear text windows passwords.  Also force cleartext LSASS creds](https://pentestlab.blog/2018/04/04/dumping-clear-text-credentials/)
