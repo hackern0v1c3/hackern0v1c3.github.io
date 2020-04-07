@@ -7,3 +7,5 @@
 * [Great payload resources for things like xss, sqlinjection, serialization, file inclusion, and many others.](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [Extracting firmware from .img files](https://www.youtube.com/watch?v=oqk3cU7ekag)
 * [Find useful expired domains for phishing](https://www.expireddomains.net/)
+* [Search for ippsec tutorials](https://ippsec.rocks/?#)
+* [Secwiki has lists of windows kernal exploits, linux kernal exploits, and many other useful resources](https://github.com/SecWiki)
