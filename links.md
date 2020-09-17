@@ -7,4 +7,5 @@
 * [Secwiki has lists of windows kernal exploits, linux kernal exploits, and many other useful resources](https://github.com/SecWiki)
 * [Google fuzzing tool](https://github.com/google/oss-fuzz)
 * [Microsoft fuzzing framework](https://github.com/microsoft/onefuzz)
+* [Javascript fuzzer](https://github.com/googleprojectzero/fuzzilli)
 * [Fuzzing info resources](https://github.com/secfigo/Awesome-Fuzzing)
