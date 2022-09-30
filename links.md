@@ -9,3 +9,5 @@
 * [Microsoft fuzzing framework](https://github.com/microsoft/onefuzz)
 * [Javascript fuzzer](https://github.com/googleprojectzero/fuzzilli)
 * [Fuzzing info resources](https://github.com/secfigo/Awesome-Fuzzing)
+* [Powershell Amsi Bypass](https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell)
+* [Tool to encode .exe or .dll shellcode to bypass EDR](https://github.com/optiv/Freeze)

@@ -15,3 +15,8 @@
 * [get a shell on windows box with creds when port 5985 is open](https://alionder.net/winrm-shell/)
 * [around 11 minutes catching creds with meterpreter for services, similar to responder, also some nice pentesting python for webapps](https://youtu.be/4uCoI5YzOwk)
 * [Grabbing clear text windows passwords.  Also force cleartext LSASS creds](https://pentestlab.blog/2018/04/04/dumping-clear-text-credentials/)
+* [IPMI/ILO/iDrac attacks 1](https://www.rapid7.com/blog/post/2013/07/02/a-penetration-testers-guide-to-ipmi)
+* [IPMI/ILO/iDrac attacks 2](https://book.hacktricks.xyz/pentesting/623-udp-ipmi)
+* [EDR Bypass Techniques](https://www.deepinstinct.com/blog/edr-bypass-techniques-and-how-to-stop-them)
+* [Bypass Powershell Restrictions](https://blog.certcube.com/powershell-restrictions-bypasses-archives-learnings/)
+* [Mitre attack framework tips for bypassing EDR](https://attack.mitre.org/techniques/T1218)
