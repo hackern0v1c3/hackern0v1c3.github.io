@@ -15,3 +15,4 @@
 
 ## Tips
 * [Automate password cracking on AWS](https://github.com/Coalfire-Research/npk)
+* [A curated list of awesome tools, research, papers and other projects related to password cracking and password security](https://github.com/n0kovo/awesome-password-cracking)
