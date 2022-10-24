@@ -20,3 +20,4 @@
 * [EDR Bypass Techniques](https://www.deepinstinct.com/blog/edr-bypass-techniques-and-how-to-stop-them)
 * [Bypass Powershell Restrictions](https://blog.certcube.com/powershell-restrictions-bypasses-archives-learnings/)
 * [Mitre attack framework tips for bypassing EDR](https://attack.mitre.org/techniques/T1218)
+* [Simple trick to help avoid AV detection using wildcards in commands](https://www.youtube.com/watch?v=WJlqQYyzGi8)
